@@ -39,7 +39,7 @@ body	{
 }
 
 .akshay:hover .overlay {
-  opacity: 0.5;
+  opacity: 0.7;
 
 }
 .akshay:hover .text {
@@ -49,11 +49,35 @@ body	{
 
 .text {
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   opacity: 0;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto; /* Center the DIV horizontally */
+}
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background: #333;
+    padding: 10px 0;
+    color: #fff;
+}
+.fixed-header{
+    top: 0;
+}
+.fixed-footer{
+    bottom: 0;
+}    
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 80px;
+    display: inline-block;
 }
