@@ -1,0 +1,59 @@
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+}
+p  {
+    color: brown;
+    font-family: courier;
+    font-size: 120%;
+
+}
+body	{
+	background:url("images/123.jpg");
+	
+}
+
+.akshay {
+  position: relative;
+  width: 80%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: blue;
+}
+
+.akshay:hover .overlay {
+  opacity: 0.5;
+
+}
+.akshay:hover .text {
+  opacity: 1.0;
+
+}
+
+.text {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+}
