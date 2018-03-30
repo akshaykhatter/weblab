@@ -11,7 +11,9 @@ p  {
 }
 body	{
 	background:url("images/123.jpg");
-	
+  margin: 0;
+	padding: 0;
+
 }
 
 .akshay {
@@ -66,7 +68,7 @@ body	{
     width: 100%;
     position: fixed;        
     background: #333;
-    padding: 10px 0;
+    padding: 10px 0px;
     color: #fff;
 }
 .fixed-header{

@@ -3,24 +3,41 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 	<title>Sign Up Form</title>
+<script type ="text/javascript" src="validate.js"> </script>
 </head>
 <body >
+  <div class="fixed-header">
+        <div class="container">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="signup.html">Sign Up</a>
+                <a href="#">Products</a>
+                <a href="allservices.html">Services</a>
+                <a href="#cont_section">Contact Us</a>
+            </nav>
+        </div>
+    </div>
+<br><br><br>
 <h3 align='center'>SIGN UP HERE</h3>
 	
-	<form align='center'>
+	<form name="signupform" align='center' onsubmit="return validateform();" method="post" >
   First name:<br>
   <input type="text" name="firstname"><br>
   Last name:<br>
   <input type="text" name="lastname">
-	<br>
+  <br>
+  Email:<br>
+  <input type="text" name="email">
+  <br>
   <input type="radio" name="gender" value="male" checked> Male<br>
   <input type="radio" name="gender" value="female"> Female<br>
   <input type="radio" name="gender" value="other"> Other <br>
   Which Servies would you like to avail:<br>
   <input type="checkbox" name="service" value="InfluencerMarketing"> Influencer Marketing<br>
-  <input type="checkbox" name="service" value="OtherServices" "> Other Services<br>
+  <input type="checkbox" name="service" value="OtherServices" "> Other Services<br><br>
+  Password: <input type="password" name="password"><br/>
   <br>	
-    <input type="submit" value="Submit">
+    <input type="submit" value="submit">
 	</form>  
 
 
@@ -34,5 +51,10 @@
 </ul>
   </li>
 </ol> 
+
+<section id="cont_section"></section>
+  <div class="fixed-footer">
+        <div align=center class="container">Copyright &copy; 2018 Developed by Akshay - akshaykhatter@yahoo.in</div>        
+    </div>
 </body>
 </html>

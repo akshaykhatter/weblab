@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style >
+    h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+}
+p  {
+    color: brown;
+    font-family: courier;
+    font-size: 120%;
+
+}
+body  {
+  background:url("images/123.jpg");
+  
+}
+
+.akshay {
+  position: relative;
+  width: 80%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: blue;
+}
+
+.akshay:hover .overlay {
+  opacity: 0.7;
+
+}
+.akshay:hover .text {
+  opacity: 1.0;
+
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto; /* Center the DIV horizontally */
+}
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background: #333;
+    padding: 10px 0;
+    color: #fff;
+}
+.fixed-header{
+    top: 0;
+}
+.fixed-footer{
+    bottom: 0;
+}    
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 80px;
+    display: inline-block;
+}
+  </style>
+	<title>Sign Up Form</title>
+</head>
+<body >
+<h3 align='center'>SIGN UP HERE</h3>
+	
+	<form align='center' method="get" action="signup1.jsp">
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+	<br>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other <br>
+  Which Servies would you like to avail:<br>
+  <input type="checkbox" name="service" value="InfluencerMarketing"> Influencer Marketing<br>
+  <input type="checkbox" name="service" value="OtherServices" "> Other Services<br>
+  <br>	
+    <input type="submit" value="Submit">
+	</form>  
+
+
+	<h4>Terms and Conditions:</h2>
+	<ol>
+  <li>Your Information is secure with us.</li>
+  <li>We use your information for:
+		<ul>
+  <li>Sending you better offers</li>
+  <li>Contacting you for business collabrations</li>
+</ul>
+  </li>
+</ol> 
+        <h3 align="center"><A HREF="showData.jsp">
+<font size="4" color="blue">Show Existing Influencers and Brands</font>
+</A></h3>
+
+</body>
+</html>
